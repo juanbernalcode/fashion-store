@@ -9,14 +9,19 @@ const ProductDetail = () => {
 
 
 
-    const { getProductDetail, productDetail } = useContext(DataContext);
+    const { getProductDetail, productDetail } = useContext(DataContext)
+    ;
     const { data } = productDetail;
+
+
+
     useEffect(() => {
         getProductDetail(id)
 
         return () => {
             getProductDetail(id)
         }
+        
     }, [])
 
 

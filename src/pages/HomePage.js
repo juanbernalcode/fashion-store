@@ -8,6 +8,7 @@ import ProductCard from '../components/ProductCard';
 const HomePage = () => {
 
     const { data, getProducts } = useContext(DataContext);
+
     useEffect(() => {
 
         getProducts()

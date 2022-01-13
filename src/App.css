@@ -4,17 +4,281 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     background-color: #690069;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23550055' stroke-width='1.9'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23940094'%3E%3Ccircle cx='769' cy='229' r='9'/%3E%3Ccircle cx='539' cy='269' r='9'/%3E%3Ccircle cx='603' cy='493' r='9'/%3E%3Ccircle cx='731' cy='737' r='9'/%3E%3Ccircle cx='520' cy='660' r='9'/%3E%3Ccircle cx='309' cy='538' r='9'/%3E%3Ccircle cx='295' cy='764' r='9'/%3E%3Ccircle cx='40' cy='599' r='9'/%3E%3Ccircle cx='102' cy='382' r='9'/%3E%3Ccircle cx='127' cy='80' r='9'/%3E%3Ccircle cx='370' cy='105' r='9'/%3E%3Ccircle cx='578' cy='42' r='9'/%3E%3Ccircle cx='237' cy='261' r='9'/%3E%3Ccircle cx='390' cy='382' r='9'/%3E%3C/g%3E%3C/svg%3E");
 }
+
 /* ···· About me  */
 
-.About__container {
-    border: solid 2px red;
+.About {
+    /* border: solid 2px red; */
+    margin: 50px auto;;
+    width: 90%;
 }
+
+.About__title {
+    /* border: solid 2px green; */
+    margin-left: 5%;
+    margin-bottom: 50px;
+
+
+}
+
+.About__title-h1 {
+    color:chartreuse;
+    font-size: 4em;
+}
+
+.About__title-h2 {
+    color: #33CAFF;
+    font-size: 2em;
+}
+
+      /* -- < -- */
+.About__content {  
+    /* border: solid 2px blue; */
+    margin: 10px;
+    display: flex;
+}
+
+.About__image {
+    border: solid 5px #111;
+    background-color: blueviolet;
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    transform: rotate(30deg);
+    border-radius: 3em;
+    padding: 20px;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.About__image-1 {
+    border: solid 2px black;
+    margin: 10px;
+    border-radius: 50%;
+    height: 100%;
+    margin: auto;
+    margin-right: 30px;
+}
+
+.About__description {
+    /* border: solid 2px rgb(151, 73, 73); */
+    margin: 10px;
+}
+
+.description__head {
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.description__head h2 {
+    color: rgb(255, 255, 255);
+    /* border: solid 3px green; */
+    font-size: 4em;
+    
+}
+
+.description__head h3 {
+    color: rgb(187, 161, 223);
+    /* border: solid 3px green; */
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+.description__paragraph {
+    color: white;
+    font-family: cursive;
+    font-size: 1.4em;
+    padding: 15px;
+}
+
+.description__paragraph .init {
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+.description__paragraph .passion {
+    color: crimson;
+}
+
+.description__paragraph .front {
+    color: royalblue;
+}
+
+.description__paragraph .dev {
+    color: gray;
+}
+
+.description__paragraph .sena {
+    color: chartreuse;
+}
+
+.things__title {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.things {
+    display: flex;
+    /* border: solid 2px blue; */
+    margin: 15px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.things__paragraph {
+    margin: auto;
+    color: white;
+    font-size: 1.3em;
+    /* border: solid 2px blue; */
+    width: 95%;
+    font-family: cursive;
+}
+
+.things__paragraph span {
+    font-size: 1.1em;
+    color: rgb(151, 151, 151);
+    text-decoration: underline tomato;
+}
+
+.things__paragraph span .it {
+    color: tomato;
+    
+}
+
+.first_thing {
+    /* border: solid 2px red; */
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.circle-1 {
+    margin: 10px;
+    background-color: crimson;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.circle-1__paragraph span {
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.circle-1__paragraph {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.circle-2__paragraph span {
+    color: crimson;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+
+
+.circle-2__paragraph {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle-3__paragraph span {
+    color: aqua;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.circle-3__paragraph {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second_thing {
+    /* border: solid 2px red; */
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.circle-2 {
+    margin: 10px;
+    background-color: rgb(32, 179, 179);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.third_thing {
+    /* border: solid 2px red; */
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.circle-3 {
+    margin: 10px;
+    background-color: rgb(114, 184, 45);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+
+
 
 /* ·············· End About me ····· */
 
