@@ -12,6 +12,7 @@ const HomePage = () => {
     useEffect(() => {
 
         getProducts()
+        
 
     }, [])
 
@@ -21,8 +22,9 @@ const HomePage = () => {
             <div className="container">
                 {
                     data.map(product => 
+
                         <ProductCard
-                            props={product}
+                            product={product}
                             key={product.id}
                         />
 
